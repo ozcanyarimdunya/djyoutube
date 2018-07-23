@@ -1,0 +1,265 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock head %}
+{% block content %}
+    <i class="page-header">
+        <p></p>
+    </i>
+    <form role="form">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Selection</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label>Import Data</label>
+                                    <input class="form-control"
+                                           type="file"
+                                           required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Max Results</label>
+                                    <input class="form-control"
+                                           type="number"
+                                           placeholder="Enter max results"
+                                           min="1"
+                                           max="100"
+                                           value="5"
+                                           required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Select Type</label>
+                                    <select multiple class="form-control">
+                                        <option value="video">video</option>
+                                        <option disabled>playlist</option>
+                                        <option disabled>channel</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseCustomize">
+                                    <h4 class="panel-title">
+                                        Customize <i class="fa fa-fw fa-plus"></i>
+                                    </h4>
+                                </a>
+                            </div>
+                            <div id="collapseCustomize" class="panel-collapse collapse">
+                                <div class="panel-body" id="accordion">
+                                    <div class="form-group row">
+                                        <div class="col-sm-6">
+                                            <label>Snippet</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_title"
+                                                           checked>
+                                                    title
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_description"
+                                                           checked>
+                                                    description
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_CategoryId"
+                                                           checked>
+                                                    CategoryId
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_channelId"
+                                                           checked>
+                                                    channelId
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_channelTitle"
+                                                           checked>
+                                                    channelTitle
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_localized_title"
+                                                           checked>
+                                                    localized_title
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_localized_description"
+                                                           checked>
+                                                    localized_description
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_publishedAt"
+                                                           checked>
+                                                    publishedAt
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_tags"
+                                                           checked>
+                                                    tags
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_liveBroadcastContent"
+                                                           checked>
+                                                    liveBroadcastContent
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="snippet_thumbnails_default_url"
+                                                           checked>
+                                                    thumbnails_default_url
+                                                </label>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>Content Details</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="caption"
+                                                           checked>
+                                                    caption
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="contentDetails_definition"
+                                                           checked>
+                                                    definition
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="contentDetails_dimension"
+                                                           checked>
+                                                    dimension
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="contentDetails_duration"
+                                                           checked>
+                                                    duration
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="contentDetails_licensedContent"
+                                                           checked>
+                                                    licensedContent
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="contentDetails_projection"
+                                                           checked>
+                                                    projection
+                                                </label>
+                                            </div>
+
+                                            <hr>
+                                            <label>Statistics</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="statistics_commentCount"
+                                                           checked>
+                                                    commentCount
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="statistics_dislikeCount"
+                                                           checked>
+                                                    dislikeCount
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="statistics_favoriteCount"
+                                                           checked>
+                                                    favoriteCount
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="statistics_likeCount"
+                                                           checked>
+                                                    likeCount
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="statistics_viewCount"
+                                                           checked>
+                                                    viewCount
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button type="submit" class="btn btn-primary">Execute</button>
+                <button type="reset" class="btn btn-default">Reset</button>
+                <button type="button" class="btn btn-outline btn-success pull-right">
+                    <i class="fa fa-fw fa-file-excel-o"></i>
+                    Export
+                </button>
+            </div>
+        </div>
+    </form>
+
+{% endblock content %}
+{% block script %}
+{% endblock script %}
